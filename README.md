@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎨 Artistry
+> **Where Artists Share Their Story.**
 
-## Getting Started
+Artistry is a premium, minimalist social platform designed for creators to showcase their work and share their creative journeys. Inspired by the clean, sophisticated design systems of **Apple** and **Google**, Artistry focuses on high-fidelity typography, spacious layouts, and a seamless "Pro" writing experience.
 
-First, run the development server:
+---
 
+## ✨ Premium Features
+
+- **🛡️ Secure Authentication**: Full email/password auth powered by Supabase SSR.
+- **🖊️ Pro Story Creator**: A distraction-free, Markdown-enabled editor with a sticky minimalist toolbar.
+- **📱 Responsive Design**: A fluid experience across mobile, tablet, and desktop using a custom Apple-inspired design system.
+- **🏞️ Hero Aesthetics**: High-end hero sections with abstract minimalist backgrounds.
+- **👤 Artist Profiles**: Auto-generated profiles with customizable art styles and bios.
+- **🚀 Real-time Feed**: Fast, optimized discovery feed featuring local and global art stories.
+
+---
+
+## 🛠️ Technology Stack
+
+| Layer | Technology |
+| :--- | :--- |
+| **Framework** | [Next.js 15 (App Router)](https://nextjs.org/) |
+| **Styling** | [Tailwind CSS 4](https://tailwindcss.com/) + Custom Vanilla CSS |
+| **Backend/Auth** | [Supabase](https://supabase.com/) |
+| **Deployment** | [Vercel](https://vercel.com/) |
+| **Design Language** | Minimalist Apple/Google Aesthetics |
+
+---
+
+## 🚀 Live Demo
+
+Check out the live platform here:  
+**[Artistry Platform](https://deknek-lake.vercel.app)**
+
+---
+
+## 🛠️ Local Development
+
+### 1. Prerequisites
+- Node.js 18+
+- A Supabase Project
+
+### 2. Setup
+Clone the repository and install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3. Environment Variables
+Create a `.env.local` file in the root directory:
+```env
+NEXT_PUBLIC_SUPABASE_URL=your-project-url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 4. Database Setup
+Run the `supabase-schema.sql` script in your Supabase SQL Editor to initialize the tables and triggers. 
+To see mock data, run `supabase-mock-data.sql`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 5. Run Server
+```bash
+npm run dev
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 👨‍🎨 Design Philosophy
+Artistry was built with the belief that **simplicity is the ultimate sophistication**. Every pixel was meticulously aligned to ensure that the content—the artist's story—is always the star of the show.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Developed for the **Full Stack Developer Internship Round 2 Assignment**.
