@@ -31,7 +31,7 @@ Artistry is a premium, minimalist social platform designed for creators to showc
 ## 🚀 Live Demo
 
 Check out the live platform here:  
-**[Artistry Platform](https://deknek-lake.vercel.app)**
+**[Artistry Platform](https://dek-nek3-d-liard.vercel.app/)**
 
 ---
 
